@@ -24,7 +24,7 @@ int main() {
       else if (input.substr(0,5)=="type ") {
           std::string command = input.substr(5);
           if (mpp.find(command) != mpp.end()) {
-              std::cout<<command<<" is a shell builtin"<<std::endl;
+              std::cout<<command<<" is /usr/bin/"<<command<<std::endl;
           }
           else {
               std::cout<<command<<": not found"<<std::endl;
