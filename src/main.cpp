@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 #include <string>
 
 int main() {
@@ -12,6 +13,9 @@ int main() {
 
       std::string input;
       std::getline(std::cin, input);
+      if (input =="echo 0") {
+          break;
+      }
       std::cout << input <<": command not found"<<std::endl;
 
   }
