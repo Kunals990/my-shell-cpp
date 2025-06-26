@@ -14,9 +14,7 @@ int main() {
 
       std::string input;
       std::getline(std::cin, input);
-      std::pmr::map<std::string,int>mpp;
-      mpp["echo"]=1;
-      mpp["exit"]=2;
+      std::pmr::map<std::string,int>mpp={{"echo",1},{"exit",1},{"type",1}};
       if (input =="exit 0") {
           return 0;
       }
